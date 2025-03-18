@@ -1,13 +1,12 @@
 {
     "name": "Rajesh Kathirvel",
-    "about": "Driven data analyst student with a keen interest in transforming raw data into meaningful narratives. Aspiring data analyst with a passion for uncovering insights through data. Currently honing my skills in Python, SQL, and Data Visualization. ",
-    "skills": ["Python", "SQL","Mongo DB ","Power BI", "Tableau", "Machine Learning","Prompt Engineering"],
-
+    "about": "I am a passionate Data Analyst with experience in Python, SQL, and Data Visualization.",
+    "skills": ["Python", "SQL", "MongoDB", "Power BI", "Tableau", "Machine Learning", "Prompt Engineering"],
     "projects": [
         {
             "title": "Startup Company Prediction",
             "description": "A machine learning model to predict startup success.",
-            "link": "https://github.com/Rajesh7094/Startup-Company-Prediction-Machine-Learning-with-Streamlit"
+            "link": "https://github.com/Rajesh7094/Startup-Company-Prediction"
         },
         {
             "title": "Text Sentimental Analysis",
