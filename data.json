@@ -1,0 +1,89 @@
+{
+    "name": "Rajesh Kathirvel",
+    "about": "Driven data analyst student with a keen interest in transforming raw data into meaningful narratives. Aspiring data analyst with a passion for uncovering insights through data. Currently honing my skills in Python, SQL, and Data Visualization. ",
+    "skills": ["Python", "SQL","Mongo DB ","Power BI", "Tableau", "Machine Learning","Prompt Engineering"],
+
+    "projects": [
+        {
+            "title": "Startup Company Prediction",
+            "description": "A machine learning model to predict startup success.",
+            "link": "https://github.com/Rajesh7094/Startup-Company-Prediction-Machine-Learning-with-Streamlit"
+        },
+        {
+            "title": "Text Sentimental Analysis",
+            "description": "A sentiment analysis tool to Predict Text's sentiment.",
+            "link": "https://github.com/Rajesh7094/Text_Emotional_Analysis"
+        },
+        {
+            "title": "Voice-Text Sentimental Analysis",
+            "description": "A sentiment analysis tool to Predict Voice and Text's sentiment.",
+            "link": "https://github.com/Rajesh7094/Voice-Text-Emotional-Analysis"
+        }
+    ],
+    "certificates": [
+        {
+            "title": "Awarded for Best Student Co-ordinator of the year at Al-Ameen Engineering College.",
+            "image": "static/certificates/certificate14.jpg"
+        },
+        {
+            "title": "Certificate for completing OfficeMaster's Excel using Chat GPT & AI Tools.",
+            "image": "static/certificates/certificate1.jpg"
+        },
+        {
+            "title": "Certificate for Participating in AI tools workshop offered by Growthyfai Technologies.",
+            "image": "static/certificates/certificate2.jpg"
+        },
+        {
+            "title": "Certificate for completing of PowerBI workshop conducted by be10x.",
+            "image": "static/certificates/certificate3.jpg"
+        },
+        {
+            "title": "Certificate for completing of Tableau workshop conducted by Jobaaj Learnings.",
+            "image": "static/certificates/certificate4.jpg"
+        },
+        {
+            "title": "1st Prize in Paper Presentation at PGP College of Engineering and Technology.",
+            "image": "static/certificates/certificate5.jpg"
+        },
+        {
+            "title": "2nd Prize in Paper Presentation at Erode Sengunthar Engineering College.",
+            "image": "static/certificates/certificate6.jpg"
+        },
+        {
+            "title": "Completed the 15-day Internship in Data Science and Data Analytics at Gateway Software SolutionS.",
+            "image": "static/certificates/certificate7.jpg"
+        },
+        {
+            "title": "Completed the 30 Days MasterClass in Data Analytics conducted by NoviTech R&D Private Limited.",
+            "image": "static/certificates/certificate8.jpg"
+        },
+        {
+            "title": "Certificate of Completion for Web Development workshop organized by GeeksforGeeks KAHE.",
+            "image": "static/certificates/certificate9.jpg"
+        },
+        {
+            "title": "I have successfully completed the Data Science with Python program conducted by LetsUpgrade.",
+            "image": "static/certificates/certificate10.jpg"
+        },
+        {
+            "title": "Completed the Five Days National Level Skill Development Program on Data Science in Education: Learning Analytics and AI-Driven Personalization organized K.S.R. College of Engineering.",
+            "image": "static/certificates/certificate11.jpg"
+        },
+        {
+            "title": "Certificate for participated in the Online Workshop on AI & MLg conducted by ECLearnix EdTech Private Limited.",
+            "image": "static/certificates/certificate12.jpg"
+        },
+        {
+            "title": "Certificate for participated in the Online Workshop on Smart Agentic AI: The Future of Automation conducted by ECLearnix EdTech Private Limited.",
+            "image": "static/certificates/certificate13.jpg"
+        }
+    ],
+    "contact": {
+        "email": "rajesherode2004@gmail.com",
+        "phone": "+91 70948 82379"
+    },
+    "social": {
+        "linkedin": "http://www.linkedin.com/in/rajesh-kathirvel-1a17082b3",
+        "github": "https://github.com/Rajesh7094"
+    }
+}
