@@ -1,7 +1,15 @@
 {
     "name": "Rajesh Kathirvel",
     "about": "I am a passionate Data Analyst with experience in Python, SQL, and Data Visualization.",
-    "skills": ["Python", "SQL", "MongoDB", "Power BI", "Tableau", "Machine Learning", "Prompt Engineering"],
+    "skills": {
+        "Python": 90,
+        "SQL": 85,
+        "MongoDB": 80,
+        "Power BI": 85,
+        "Tableau": 80,
+        "Machine Learning": 75,
+        "Prompt Engineering": 90
+    },
     "projects": [
         {
             "title": "Startup Company Prediction",

@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>{{ data.name }}</h1>
-        <p>{{ data.about }}</p>
+        <p class="about-me">{{ data.about }}</p>
         <nav>
             <a href="/">Home</a>
             <a href="/projects">Projects</a>
@@ -20,11 +20,29 @@
     </header>
     <section>
         <h2>Skills</h2>
-        <ul>
-            {% for skill in data.skills %}
-            <li>{{ skill }}</li>
+        <ul class="skills-list">
+            {% for skill, percentage in data.skills.items() %}
+            <li>
+                {{ skill }}
+                <div class="skill-percentage">
+                    <div class="skill-bar" style="width: {{ percentage }}%;"></div>
+                    <span>{{ percentage }}%</span>
+                </div>
+            </li>
             {% endfor %}
         </ul>
+        <br><br>
+        <div class="social-icons">
+            <a href="{{ data.social.linkedin }}" target="_blank">
+                <img src="/static/icons/linkedin.png" alt="LinkedIn" class="social-logo">
+            </a>
+            <a href="{{ data.social.github }}" target="_blank">
+                <img src="/static/icons/github.png" alt="GitHub" class="social-logo">
+            </a>
+            <a href="mailto:{{ data.contact.email|replace('@', '%40') }}?subject=Contact%20from%20Website">
+                <img src="/static/icons/gmail.jpeg" alt="Gmail" class="social-logo">
+            </a>
+        </div>
     </section>
 </body>
 </html>
