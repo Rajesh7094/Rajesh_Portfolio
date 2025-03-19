@@ -9,6 +9,9 @@
 <body>
     <header>
         <h1>{{ data.name }}</h1>
+        <div class="profile-pic-container">
+            <img src="/static/profile.jpg" alt="Your Profile" class="profile-pic">
+        </div>
         <p class="about-me">{{ data.about }}</p>
         <nav>
             <a href="/">Home</a>
@@ -31,7 +34,6 @@
             </li>
             {% endfor %}
         </ul>
-        <br><br>
         <div class="social-icons">
             <a href="{{ data.social.linkedin }}" target="_blank">
                 <img src="/static/icons/linkedin.png" alt="LinkedIn" class="social-logo">

@@ -1,20 +1,22 @@
 {
-    "name": "Rajesh Kathirvel",
-    "about": "I am a passionate Data Analyst with experience in Python, SQL, and Data Visualization.",
+    "name": "Mr. Rajesh Kathirvel",
+    "about": "Hi! I'm Rajesh Kathirvel, a passionate 3rd-year B.Tech student in Artificial Intelligence and Data Science at Al-Ameen Engineering College, Erode.\n\nI have a strong interest in machine learning, deep learning, and data analytics. My goal is to leverage AI technologies to solve real-world problems efficiently. I enjoy working on projects related to data science, predictive modeling, and AI-driven applications.",
     "skills": {
-        "Python": 90,
-        "SQL": 85,
-        "MongoDB": 80,
-        "Power BI": 85,
-        "Tableau": 80,
-        "Machine Learning": 75,
-        "Prompt Engineering": 90
+        "Python": 80,
+        "SQL": 75,
+        "MongoDB": 70,
+        "Power BI": 80,
+        "Tableau": 75,
+        "Machine Learning": 79,
+        "Prompt Engineering": 90,
+        "C , Java": 65,
+        "Word, Excel, Powerpoint": 85
     },
     "projects": [
         {
             "title": "Startup Company Prediction",
             "description": "A machine learning model to predict startup success.",
-            "link": "https://github.com/Rajesh7094/Startup-Company-Prediction"
+            "link": "https://github.com/Rajesh7094/Startup-Company-Prediction-Machine-Learning-with-Streamlit"
         },
         {
             "title": "Text Sentimental Analysis",
@@ -31,6 +33,10 @@
         {
             "title": "Awarded for Best Student Co-ordinator of the year at Al-Ameen Engineering College.",
             "image": "static/certificates/certificate14.jpg"
+        },
+        {
+            "title": "Completed the 14-day Internship in Full Stack-Python at ETS Academy.",
+            "image": "static/certificates/certificate15.jpg"
         },
         {
             "title": "Certificate for completing OfficeMaster's Excel using Chat GPT & AI Tools.",

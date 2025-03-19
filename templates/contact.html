@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <center>
     <h1>Contact</h1>
     <p>Email: <a href="mailto:{{ contact.email|replace('@', '%40') }}?subject=Contact%20from%20Website">{{ contact.email }}</a></p>
     <br>
     <p>Phone: {{ contact.phone }}</p>
-    <center><h2>Social Media</h2></center>
+        <br><br>
+    <h2>Social Media</h2>
     <br>
     <div class="social-icons">
         <a href="{{ social.linkedin }}" target="_blank">
@@ -25,7 +27,7 @@
         </a>
     </div>
     <br><br><br><br>
-    <center>
+
     <a href="/" class="back-button">Back to Home</a>
     </center>
 </body>

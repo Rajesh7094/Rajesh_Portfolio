@@ -57,7 +57,7 @@ section {
 }
 
 ul li img {
-    margin-left: 110px;
+    margin-left: 140px;
     max-width: 300px; /* Optional: Set a max-width for the images */
     height: auto; /* Maintain aspect ratio */
 }
@@ -153,7 +153,7 @@ a[download]:hover {
 }
 
 .skills-list li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -168,7 +168,7 @@ a[download]:hover {
 
 .skill-bar {
     background-color: #00ccff; /* Skill bar color */
-    height: 10px;
+    height: 5px;
 }
 
 .skill-percentage span {
@@ -179,6 +179,20 @@ a[download]:hover {
 .about-me {
     white-space: normal; /* Allow text to wrap */
     word-wrap: break-word; /* Break long words */
-    max-width: 800px; /* Limit the width of the paragraph */
+    max-width: 1100px; /* Limit the width of the paragraph */
     margin: 0 auto; /* Center the paragraph */
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle */
+    border: 3px solid #00ccff; /* Optional: Add a border */
 }
