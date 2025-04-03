@@ -12,6 +12,9 @@ header {
     text-align: center;
 }
 
+header h1 {
+    color: #ffffff;
+}
 h1, h2 {
     color: #ffffff;
 }
@@ -195,4 +198,17 @@ a[download]:hover {
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the circle */
     border: 3px solid #00ccff; /* Optional: Add a border */
+}
+
+.live-demo-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.live-demo-button:hover {
+    background-color: #0056b3;
 }

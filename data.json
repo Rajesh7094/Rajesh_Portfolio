@@ -21,7 +21,8 @@
         {
             "title": "Text Sentimental Analysis",
             "description": "A sentiment analysis tool to Predict Text's sentiment.",
-            "link": "https://github.com/Rajesh7094/Text_Emotional_Analysis"
+            "link": "https://github.com/Rajesh7094/Text_Emotional_Analysis",
+            "live_demo": "https://rajesh7094-text-emotional-analysis-app-iynxcy.streamlit.app/"
         },
         {
             "title": "Voice-Text Sentimental Analysis",
@@ -89,6 +90,10 @@
         {
             "title": "Certificate for participated in the Online Workshop on Smart Agentic AI: The Future of Automation conducted by ECLearnix EdTech Private Limited.",
             "image": "static/certificates/certificate13.jpg"
+        },
+        {
+            "title": "I have successfully completed the Python Bootcamp conducted by LetsUpgrade.",
+            "image": "static/certificates/certificate16.jpg"
         }
     ],
     "contact": {
