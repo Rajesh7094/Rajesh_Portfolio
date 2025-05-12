@@ -94,6 +94,22 @@
         {
             "title": "I have successfully completed the Python Bootcamp conducted by LetsUpgrade.",
             "image": "static/certificates/certificate16.jpg"
+        },
+        {
+            "title": "I have successfully completed the Emotional Intelligence Bootcamp conducted by LetsUpgrade",
+            "image": "static/certificates/certificate17.jpg"
+        },
+        {
+           "title": "I have successfully completed the MySQL Bootcamp conducted by LetsUpgrade",
+            "image": "static/certificates/certificate18.jpg"
+        },
+        {
+            "title": "I have successfully completed the Prompt Engineering Bootcamp conducted by LetsUpgrade",
+            "image": "static/certificates/certificate19.jpg"
+        },
+        {
+            "title": "I have been Selected for Data Science Intern at Cognifyz Technologies for 1 Month duration",
+            "image": "static/certificates/certificate20.jpg"
         }
     ],
     "contact": {
