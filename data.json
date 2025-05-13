@@ -32,7 +32,8 @@
         {
             "title": "Fake_News_Detection_with_Streamlit",
             "description": "NLP Tool for Detecting Fake News",
-            "link": "https://fakenewsdetectionwithapp-dp7ezcuehf3yfxhkluhrxw.streamlit.app/"
+            "link": "https://github.com/Rajesh7094/Fake_News_Detection_with_Streamlit.git",
+            "live_demo": "https://fakenewsdetectionwithapp-dp7ezcuehf3yfxhkluhrxw.streamlit.app/"
         }
     ],
     "certificates": [
