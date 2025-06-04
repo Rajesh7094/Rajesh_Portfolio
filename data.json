@@ -128,6 +128,18 @@
         {
             "title": "I have been Selected for Data Science Intern at Cognifyz Technologies for 1 Month duration",
             "image": "static/certificates/certificate20.jpg"
+        },
+        {
+            "title": "I have successfully completed the MongoDB Bootcamp conducted by LetsUpgrade",
+            "image": "static/certificates/certificate24.jpg"
+        },
+        {
+            "title": "I have successfully completed the Advanced Data Analysis using Excel and PowerBI conducted by LetsUpgrade",
+            "image": "static/certificates/certificate25.jpg"
+        },
+        {
+            "title": "I have been Successfully Completed Data Science Intern at Cognifyz Technologies",
+            "image": "static/certificates/certificate26.jpg"
         }
     ],
     "contact": {
