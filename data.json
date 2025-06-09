@@ -140,6 +140,10 @@
         {
             "title": "I have been Successfully Completed Data Science Intern at Cognifyz Technologies",
             "image": "static/certificates/certificate26.jpg"
+        },
+        {
+            "title": "I have Successfully Completed Course on MySQL-Intermediate at KT Nest",
+            "image":  "static/certificates/certificate27.jpg"
         }
     ],
     "contact": {
