@@ -10,7 +10,7 @@
     <header>
         <h1>{{ data.name }}</h1>
         <div class="profile-pic-container">
-            <img src="/static/profile.jpg" alt="Your Profile" class="profile-pic">
+            <img src="/static/profile.jpg" alt="Your Profile" class="profile-pic" onclick="openProfileModal(this.src)">
         </div>
         <p class="about-me">{{ data.about }}</p>
         <nav>
@@ -21,6 +21,7 @@
             <a href="/contact">Contact</a>
         </nav>
     </header>
+
     <section>
         <h2>Skills</h2>
         <ul class="skills-list">
@@ -34,6 +35,7 @@
             </li>
             {% endfor %}
         </ul>
+
         <div class="social-icons">
             <a href="{{ data.social.linkedin }}" target="_blank">
                 <img src="/static/icons/linkedin.png" alt="LinkedIn" class="social-logo">
@@ -41,10 +43,27 @@
             <a href="{{ data.social.github }}" target="_blank">
                 <img src="/static/icons/github.png" alt="GitHub" class="social-logo">
             </a>
-            <a href="mailto:{{ data.contact.email|replace('@', '%40') }}?subject=Contact%20from%20Website">
+            <a href="mailto:{{ data.contact.email|replace('@', '%40') }}?subject=Contact%20from%20Portfolio">
                 <img src="/static/icons/gmail.jpeg" alt="Gmail" class="social-logo">
             </a>
         </div>
     </section>
+
+    <!-- Modal for Profile Picture -->
+    <div id="profileModal" class="modal" onclick="closeProfileModal()">
+        <span class="close" onclick="closeProfileModal()">&times;</span>
+        <img class="modal-content" id="profileModalImage">
+    </div>
+
+    <script>
+        function openProfileModal(src) {
+            document.getElementById("profileModalImage").src = src;
+            document.getElementById("profileModal").style.display = "block";
+        }
+
+        function closeProfileModal() {
+            document.getElementById("profileModal").style.display = "none";
+        }
+    </script>
 </body>
 </html>
