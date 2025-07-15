@@ -1,8 +1,9 @@
 {
     "name": "Mr. Rajesh Kathirvel",
-    "about": "Hi! I'm Rajesh Kathirvel, a passionate 3rd-year B.Tech student in Artificial Intelligence and Data Science at Al-Ameen Engineering College, Erode.\n\nI have a strong interest in machine learning, deep learning, and data analytics. My goal is to leverage AI technologies to solve real-world problems efficiently. I enjoy working on projects related to data science, predictive modeling, and AI-driven applications.",
+    "about": "Hi! I'm Rajesh Kathirvel, a passionate Final Year B.Tech student in Artificial Intelligence and Data Science at Al-Ameen Engineering College, Erode.\n\nI have a strong interest in machine learning, deep learning, and data analytics. My goal is to leverage AI technologies to solve real-world problems efficiently. I enjoy working on projects related to data science, predictive modeling, and AI-driven applications.",
     "skills": {
         "Python": 80,
+        "Web Scraping": 75,
         "SQL": 75,
         "MongoDB": 70,
         "Power BI": 80,
@@ -34,6 +35,12 @@
             "description": "NLP Tool for Detecting Fake News",
             "link": "https://github.com/Rajesh7094/Fake_News_Detection_with_Streamlit.git",
             "live_demo": "https://fakenewsdetectionwithapp-dp7ezcuehf3yfxhkluhrxw.streamlit.app/"
+        },
+        {
+            "title": "AI Tech Trend Web Scraper",
+            "description": "Web Scraping Technique used to extract news based on AI",
+            "link": "https://github.com/Rajesh7094/AI-Tech-Trend-Web-Scraper.git",
+            "live_demo": "https://ai-tech-trend-web-scraper-eef2f6h5jgzutudnv2otzo.streamlit.app/"
         }
     ],
     "certificates": [
