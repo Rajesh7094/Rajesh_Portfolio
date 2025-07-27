@@ -17,7 +17,8 @@
         {
             "title": "Startup Company Prediction",
             "description": "A machine learning model to predict startup success.",
-            "link": "https://github.com/Rajesh7094/Startup-Company-Prediction-Machine-Learning-with-Streamlit"
+            "link": "https://github.com/Rajesh7094/Startup-Company-Prediction-Machine-Learning-with-Streamlit",
+            "live_demo": "https://startup-company-prediction-machine-learning-with-app-a364ezqhz.streamlit.app/"
         },
         {
             "title": "Text Sentimental Analysis",
