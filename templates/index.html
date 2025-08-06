@@ -37,13 +37,13 @@
         </ul>
 
         <div class="social-icons">
-            <a href="{{ data.social.linkedin }}" target="_blank">
+            <a href="{{ data.social.linkedin }}" target="_blank" rel="noopener noreferrer">
                 <img src="/static/icons/linkedin.png" alt="LinkedIn" class="social-logo">
             </a>
-            <a href="{{ data.social.github }}" target="_blank">
+            <a href="{{ data.social.github }}" target="_blank" rel="noopener noreferrer">
                 <img src="/static/icons/github.png" alt="GitHub" class="social-logo">
             </a>
-            <a href="mailto:{{ data.contact.email|replace('@', '%40') }}?subject=Contact%20from%20Portfolio">
+            <a href="mailto:{{ data.contact.email }}?subject=Contact%20from%20Portfolio&body=Hello%20{{ data.name.split()[1] }},%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0D%0A%0D%0ABest%20regards">
                 <img src="/static/icons/gmail.jpeg" alt="Gmail" class="social-logo">
             </a>
         </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +9,21 @@
 <body>
     <center>
     <h1>Contact</h1>
-    <p>Email: <a href="mailto:{{ contact.email|replace('@', '%40') }}?subject=Contact%20from%20Website">{{ contact.email }}</a></p>
+    <p>Email: <a href="mailto:{{ contact.email }}?subject=Contact%20from%20Website&body=Hello%20Rajesh,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0D%0A%0D%0ABest%20regards">{{ contact.email }}</a></p>
     <br>
-    <p>Phone: {{ contact.phone }}</p>
-        <br><br>
+    <p>Phone: <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></p>
+    <br><br>
+
     <h2>Social Media</h2>
     <br>
     <div class="social-icons">
-        <a href="{{ social.linkedin }}" target="_blank">
+        <a href="{{ social.linkedin }}" target="_blank" rel="noopener noreferrer">
             <img src="/static/icons/linkedin.png" alt="LinkedIn" class="social-logo">
         </a>
-        <a href="{{ social.github }}" target="_blank">
+        <a href="{{ social.github }}" target="_blank" rel="noopener noreferrer">
             <img src="/static/icons/github.png" alt="GitHub" class="social-logo">
         </a>
-        <a href="mailto:{{ contact.email|replace('@', '%40') }}?subject=Contact%20from%20Website">
+        <a href="mailto:{{ contact.email }}?subject=Contact%20from%20Website&body=Hello%20Rajesh,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0D%0A%0D%0ABest%20regards">
             <img src="/static/icons/gmail.jpeg" alt="Gmail" class="social-logo">
         </a>
     </div>
