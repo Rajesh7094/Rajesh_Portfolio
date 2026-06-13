@@ -1,35 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
-    <center>
-    <h1>Contact</h1>
-    <p>Email: <a href="mailto:{{ contact.email }}?subject=Contact%20from%20Website&body=Hello%20Rajesh,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0D%0A%0D%0ABest%20regards">{{ contact.email }}</a></p>
-    <br>
-    <p>Phone: <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></p>
-    <br><br>
+{% extends "base.html" %}
 
-    <h2>Social Media</h2>
-    <br>
-    <div class="social-icons">
-        <a href="{{ social.linkedin }}" target="_blank" rel="noopener noreferrer">
-            <img src="/static/icons/linkedin.png" alt="LinkedIn" class="social-logo">
-        </a>
-        <a href="{{ social.github }}" target="_blank" rel="noopener noreferrer">
-            <img src="/static/icons/github.png" alt="GitHub" class="social-logo">
-        </a>
-        <a href="mailto:{{ contact.email }}?subject=Contact%20from%20Website&body=Hello%20Rajesh,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0D%0A%0D%0ABest%20regards">
-            <img src="/static/icons/gmail.jpeg" alt="Gmail" class="social-logo">
-        </a>
-    </div>
-    <br><br><br><br>
+{% block title %}Contact - Rajesh Kathirvel{% endblock %}
 
-    <a href="/" class="back-button">Back to Home</a>
-    </center>
-</body>
-</html>
+{% block content %}
+<div class="section-header">
+    <h1>Get In Touch</h1>
+    <p>Have an interesting project, job opportunity, or collaboration idea? Feel free to reach out to me through any of the channels below.</p>
+</div>
+
+<div class="contact-grid">
+    <!-- Email Card -->
+    <a href="mailto:{{ contact.email }}?subject=Contact%20from%20Website&body=Hello%20Rajesh,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0D%0A%0D%0ABest%20regards" class="glass-card contact-card email">
+        <div class="contact-icon-wrapper">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <h3>Email Address</h3>
+        <span class="contact-value">{{ contact.email }}</span>
+        <span class="contact-action-text">Send Message <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+
+    <!-- Phone Card -->
+    <a href="tel:{{ contact.phone }}" class="glass-card contact-card phone">
+        <div class="contact-icon-wrapper">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <h3>Phone Number</h3>
+        <span class="contact-value">{{ contact.phone }}</span>
+        <span class="contact-action-text">Call / Message <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+
+    <!-- LinkedIn Card -->
+    <a href="{{ social.linkedin }}" target="_blank" rel="noopener noreferrer" class="glass-card contact-card linkedin">
+        <div class="contact-icon-wrapper">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <h3>LinkedIn</h3>
+        <span class="contact-value">in/rajesh-kathirvel</span>
+        <span class="contact-action-text">Connect Profile <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+
+    <!-- GitHub Card -->
+    <a href="{{ social.github }}" target="_blank" rel="noopener noreferrer" class="glass-card contact-card github">
+        <div class="contact-icon-wrapper">
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <h3>GitHub</h3>
+        <span class="contact-value">github.com/Rajesh7094</span>
+        <span class="contact-action-text">Explore Projects <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+</div>
+{% endblock %}

@@ -1,82 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <style>
-        .certificate-img {
-            max-width: 300px;
-            cursor: pointer;
-            border: 2px solid white;
-        }
+{% extends "base.html" %}
 
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.9);
-        }
+{% block title %}Certificates - Rajesh Kathirvel{% endblock %}
 
-        .modal-content {
-            margin: 5% auto;
-            display: block;
-            max-width: 90%;
-            height: auto;
-        }
+{% block content %}
+<div class="section-header">
+    <h1>Certifications & Achievements</h1>
+    <p>Honors, internships, workshops, and courses that I have successfully completed over the course of my professional development.</p>
+</div>
 
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 40px;
-            font-size: 40px;
-            color: white;
-            cursor: pointer;
-        }
-
-        .modal-content:hover {
-            cursor: zoom-out;
-        }
-    </style>
-</head>
-<body>
-    <h1>Certificates</h1>
-    <ul>
-        {% for cert in certificates %}
-        <li>
-            <h3>{{ cert.title }}</h3>
-            <img src="{{ cert.image }}" alt="{{ cert.title }}" class="certificate-img" onclick="openModal(this.src)">
-        </li>
-        {% endfor %}
-    </ul>
-
-    <center>
-        <a href="/" class="back-button">Back to Home</a>
-    </center>
-
-    <!-- Modal HTML -->
-    <div id="imageModal" class="modal" onclick="closeModal()">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
+<div class="certificates-grid">
+    {% for cert in certificates %}
+    <div class="glass-card certificate-card" onclick="openCertModal('{{ cert.image }}', '{{ cert.title }}')">
+        <div class="certificate-img-container">
+            <img src="{{ cert.image }}" alt="{{ cert.title }}" class="certificate-thumb" loading="lazy">
+        </div>
+        <div class="certificate-info">
+            <h3 class="certificate-title">{{ cert.title }}</h3>
+        </div>
     </div>
+    {% endfor %}
+</div>
 
-    <!-- JS -->
-    <script>
-        function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("imageModal").style.display = "block";
-        }
+<!-- Glassmorphic Custom Modal -->
+<div id="certModal" class="custom-modal" onclick="closeCertModal()">
+    <span class="modal-close-btn" onclick="closeCertModal()"><i class="fa-solid fa-xmark"></i></span>
+    <div class="modal-wrap" onclick="event.stopPropagation()">
+        <img class="modal-display-img" id="certModalImg" src="" alt="Certificate View">
+        <div class="modal-caption" id="certModalCaption"></div>
+    </div>
+</div>
 
-        function closeModal() {
-            document.getElementById("imageModal").style.display = "none";
+<script>
+    function openCertModal(imageSrc, titleText) {
+        const modal = document.getElementById("certModal");
+        const modalImg = document.getElementById("certModalImg");
+        const modalCaption = document.getElementById("certModalCaption");
+        
+        modalImg.src = imageSrc;
+        modalCaption.textContent = titleText;
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden"; // Disable scroll when modal is open
+    }
+
+    function closeCertModal() {
+        const modal = document.getElementById("certModal");
+        modal.classList.remove("show");
+        document.body.style.overflow = "auto"; // Re-enable scroll
+    }
+
+    // Support escape key to close modal
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") {
+            closeCertModal();
         }
-    </script>
-</body>
-</html>
+    });
+</script>
+{% endblock %}

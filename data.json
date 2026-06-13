@@ -1,47 +1,90 @@
 {
-    "name": "Mr. Rajesh Kathirvel",
-    "about": "Hi! I'm Rajesh Kathirvel, a passionate Final Year B.Tech student in Artificial Intelligence and Data Science at Al-Ameen Engineering College, Erode.\n\nI have a strong interest in machine learning, deep learning, and data analytics. My goal is to leverage AI technologies to solve real-world problems efficiently. \nI enjoy working on projects related to data science, predictive modeling, and AI-driven applications.",
+    "name": "Rajesh Kathirvel",
+    "current_role": "Junior Software Engineer — R&D Team",
+    "company": "Aggregate Intelligence India Pvt. Ltd., Coimbatore",
+    "working_status": "Currently Employed",
+    "internship": {
+        "title": "Software Engineering Intern",
+        "company": "Aggregate Intelligence India Pvt. Ltd., Coimbatore",
+        "duration": "October 2025 – June 2026",
+        "converted": true
+    },
+    "about": "Hi! I'm Rajesh Kathirvel, a Software Engineer and recent B.Tech graduate in Artificial Intelligence and Data Science from Al-Ameen Engineering College, Erode (2022-2026). I completed my internship at Aggregate Intelligence India Private Limited, Coimbatore from October 2025 to June 2026 and was subsequently onboarded as a Junior Software Engineer in the Research & Development Team.\n\nMy work focuses on AI application development, Agentic AI systems, prompt engineering, and building intelligent solutions powered by Large Language Models. I have hands-on experience working with OpenAI APIs, AI-driven workflows, software development, project management systems, and modern AI product development practices. I am passionate about building scalable AI applications, automating complex workflows, and creating intelligent solutions that solve real-world business challenges.\n\nI continuously explore emerging AI technologies and enjoy transforming ideas into practical, production-ready applications that deliver measurable value.",
     "skills": {
-        "Python": 80,
-        "Web Scraping": 75,
-        "SQL": 75,
-        "MongoDB": 70,
-        "Power BI": 80,
-        "Tableau": 75,
-        "Machine Learning": 79,
         "Prompt Engineering": 90,
-        "C , Java": 65,
-        "Word, Excel, Powerpoint": 85
+        "AI Development": 85,
+        "OpenAI API": 85,
+        "Python": 82,
+        "Agentic AI Development": 80,
+        "AI Product Development": 80,
+        "Machine Learning": 80,
+        "Data Visualization (Power BI & Tableau)": 78,
+        "SQL": 75,
+        "Project Management (ClickUp & OKRs)": 75
     },
     "projects": [
         {
             "title": "Startup Company Prediction",
-            "description": "A machine learning model to predict startup success.",
+            "description": "A machine learning predictive model developed to analyze and project the success rate of startup companies based on multiple industry data points.",
             "link": "https://github.com/Rajesh7094/Startup-Company-Prediction-Machine-Learning-with-Streamlit",
-            "live_demo": "https://startup-company-prediction-machine-learning-with-app-a364ezqhz.streamlit.app/"
+            "live_demo": "https://startup-company-prediction-machine-learning-with-app-a364ezqhz.streamlit.app/",
+            "tags": [
+                "Python",
+                "Machine Learning",
+                "Streamlit",
+                "Scikit-Learn",
+                "Predictive Analytics"
+            ]
         },
         {
-            "title": "Text Sentimental Analysis",
-            "description": "A sentiment analysis tool to Predict Text's sentiment.",
+            "title": "Text Sentiment Analysis",
+            "description": "An NLP-based sentiment analysis engine that processes textual input and predicts the emotional sentiment of user texts in real-time.",
             "link": "https://github.com/Rajesh7094/Text_Emotional_Analysis",
-            "live_demo": "https://rajesh7094-text-emotional-analysis-app-iynxcy.streamlit.app/"
+            "live_demo": "https://rajesh7094-text-emotional-analysis-app-iynxcy.streamlit.app/",
+            "tags": [
+                "Python",
+                "Natural Language Processing",
+                "Streamlit",
+                "Sentiment Analysis"
+            ]
         },
         {
-            "title": "Voice-Text Sentimental Analysis",
-            "description": "A sentiment analysis tool to Predict Voice and Text's sentiment.",
-            "link": "https://github.com/Rajesh7094/Voice-Text-Emotional-Analysis"
+            "title": "Voice-Text Sentiment Analysis",
+            "description": "A dual-input emotional and sentiment analysis tool that interprets both audio recording inputs and typed text inputs to predict user sentiment.",
+            "link": "https://github.com/Rajesh7094/Voice-Text-Emotional-Analysis",
+            "tags": [
+                "Python",
+                "Speech Recognition",
+                "NLP",
+                "Machine Learning",
+                "Librosa"
+            ]
         },
         {
-            "title": "Fake_News_Detection_with_Streamlit",
-            "description": "NLP Tool for Detecting Fake News",
+            "title": "Fake News Detection",
+            "description": "A web-based NLP utility powered by Machine Learning classifiers to inspect news articles and detect fabricated information or fake news.",
             "link": "https://github.com/Rajesh7094/Fake_News_Detection_with_Streamlit.git",
-            "live_demo": "https://fakenewsdetectionwithapp-dp7ezcuehf3yfxhkluhrxw.streamlit.app/"
+            "live_demo": "https://fakenewsdetectionwithapp-dp7ezcuehf3yfxhkluhrxw.streamlit.app/",
+            "tags": [
+                "Python",
+                "NLP",
+                "Streamlit",
+                "TF-IDF",
+                "Classification"
+            ]
         },
         {
             "title": "AI Tech Trend Web Scraper",
-            "description": "Web Scraping Technique used to extract news based on AI",
+            "description": "An automated web scraping application designed to search, extract, and catalog news articles and trends specifically in Artificial Intelligence from the web.",
             "link": "https://github.com/Rajesh7094/AI-Tech-Trend-Web-Scraper.git",
-            "live_demo": "https://ai-tech-trend-web-scraper-eef2f6h5jgzutudnv2otzo.streamlit.app/"
+            "live_demo": "https://ai-tech-trend-web-scraper-eef2f6h5jgzutudnv2otzo.streamlit.app/",
+            "tags": [
+                "Python",
+                "Web Scraping",
+                "BeautifulSoup",
+                "Streamlit",
+                "Automation"
+            ]
         }
     ],
     "certificates": [
@@ -122,41 +165,42 @@
             "image": "static/certificates/certificate16.jpg"
         },
         {
-            "title": "I have successfully completed the Emotional Intelligence Bootcamp conducted by LetsUpgrade",
+            "title": "I have successfully completed the Emotional Intelligence Bootcamp conducted by LetsUpgrade.",
             "image": "static/certificates/certificate17.jpg"
         },
         {
-           "title": "I have successfully completed the MySQL Bootcamp conducted by LetsUpgrade",
+            "title": "I have successfully completed the MySQL Bootcamp conducted by LetsUpgrade.",
             "image": "static/certificates/certificate18.jpg"
         },
         {
-            "title": "I have successfully completed the Prompt Engineering Bootcamp conducted by LetsUpgrade",
+            "title": "I have successfully completed the Prompt Engineering Bootcamp conducted by LetsUpgrade.",
             "image": "static/certificates/certificate19.jpg"
         },
         {
-            "title": "I have been Selected for Data Science Intern at Cognifyz Technologies for 1 Month duration",
+            "title": "I have been Selected for Data Science Intern at Cognifyz Technologies for 1 Month duration.",
             "image": "static/certificates/certificate20.jpg"
         },
         {
-            "title": "I have successfully completed the MongoDB Bootcamp conducted by LetsUpgrade",
+            "title": "I have successfully completed the MongoDB Bootcamp conducted by LetsUpgrade.",
             "image": "static/certificates/certificate24.jpg"
         },
         {
-            "title": "I have successfully completed the Advanced Data Analysis using Excel and PowerBI conducted by LetsUpgrade",
+            "title": "I have successfully completed the Advanced Data Analysis using Excel and PowerBI conducted by LetsUpgrade.",
             "image": "static/certificates/certificate25.jpg"
         },
         {
-            "title": "I have been Successfully Completed Data Science Intern at Cognifyz Technologies",
+            "title": "I have been Successfully Completed Data Science Intern at Cognifyz Technologies.",
             "image": "static/certificates/certificate26.jpg"
         },
         {
-            "title": "I have Successfully Completed Course on MySQL-Intermediate at KT Nest",
-            "image":  "static/certificates/certificate27.jpg"
+            "title": "I have Successfully Completed Course on MySQL-Intermediate at KT Nest.",
+            "image": "static/certificates/certificate27.jpg"
         }
     ],
     "contact": {
         "email": "rajesherode2004@gmail.com",
-        "phone": "+91 70948 82379"
+        "phone": "+91 70948 82379",
+        "address": "Erode, Tamil Nadu, India"
     },
     "social": {
         "linkedin": "http://www.linkedin.com/in/rajesh-kathirvel-1a17082b3",

@@ -1,17 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
-    <div class="resume-container">
-        <h1>Download Resume</h1>
-        <a href="/static/Rajesh_Resume.pdf" download class="download-link">Download My Resume</a>
-        <br>
-        <a href="/" class="back-button">Back to Home</a>
+{% extends "base.html" %}
+
+{% block title %}Resume - Rajesh Kathirvel{% endblock %}
+
+{% block content %}
+<div class="section-header">
+    <h1>Curriculum Vitae</h1>
+    <p>View the summary of my credentials or download my complete professional resume in PDF format.</p>
+</div>
+
+<div class="glass-card resume-download-card">
+    <div class="resume-icon-badge">
+        <i class="fa-solid fa-file-pdf"></i>
     </div>
-</body>
-</html>
+    
+    <div class="resume-text-details">
+        <h2 class="resume-card-title">Rajesh Kathirvel</h2>
+        <p class="resume-card-description">Artificial Intelligence & Data Science Graduate. Experienced in Machine Learning, NLP, Data Visualization, and SQL databases.</p>
+    </div>
+    
+    <table class="resume-details-table">
+        <tr>
+            <td class="label">Document Format</td>
+            <td class="val">PDF File (.pdf)</td>
+        </tr>
+        <tr>
+            <td class="label">File Size</td>
+            <td class="val">205 KB</td>
+        </tr>
+        <tr>
+            <td class="label">Language</td>
+            <td class="val">English (Professional)</td>
+        </tr>
+        <tr>
+            <td class="label">Last Updated</td>
+            <td class="val">June 2026</td>
+        </tr>
+    </table>
+    
+    <a href="/static/Rajesh_Resume.pdf" download="Rajesh_Kathirvel_Resume.pdf" class="btn-primary">
+        <i class="fa-solid fa-download"></i> Download Resume
+    </a>
+</div>
+{% endblock %}

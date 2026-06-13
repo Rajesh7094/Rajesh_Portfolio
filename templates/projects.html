@@ -1,30 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
-    <div class="projects-container">
-        <h1>Projects</h1>
-        <ul class="project-list">
-            {% for project in projects %}
-            <li>
-                <h3>{{ project.title }}</h3>
-                <p>{{ project.description }}</p>
-                <a href="{{ project.link }}">View Project</a>
-                <br><br><br>
-                {% if project.live_demo %}
-                <a href="{{ project.live_demo }}" target="_blank" class="live-demo-button">Live Demo</a>
-                {% endif %}
-            </li>
+{% extends "base.html" %}
+
+{% block title %}Projects - Rajesh Kathirvel{% endblock %}
+
+{% block content %}
+<div class="section-header">
+    <h1>My Projects</h1>
+    <p>A selection of Artificial Intelligence, Machine Learning, Natural Language Processing, and Data Analytics applications I have developed.</p>
+</div>
+
+<div class="projects-grid">
+    {% for project in projects %}
+    <div class="glass-card project-card">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        
+        {% if project.tags %}
+        <div class="project-tags">
+            {% for tag in project.tags %}
+            <span class="tag-badge">{{ tag }}</span>
             {% endfor %}
-        </ul>
-        <center>
-        <a href="/" class="back-button">Back to Home</a>
-        </center>
+        </div>
+        {% endif %}
+        
+        <div class="project-links">
+            <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer" class="project-link-btn code">
+                <i class="fa-brands fa-github"></i> Source Code
+            </a>
+            {% if project.live_demo %}
+            <a href="{{ project.live_demo }}" target="_blank" rel="noopener noreferrer" class="project-link-btn live">
+                <i class="fa-solid fa-earth-americas"></i> Live Demo
+            </a>
+            {% endif %}
+        </div>
     </div>
-</body>
-</html>
+    {% endfor %}
+</div>
+{% endblock %}
